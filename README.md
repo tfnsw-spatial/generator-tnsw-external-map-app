@@ -1,6 +1,6 @@
 # generator-tnsw-external-map-app [![Build Status](https://secure.travis-ci.org/vajnorcan/generator-tnsw-external-map-app.png?branch=master)](https://travis-ci.org/vajnorcan/generator-tnsw-external-map-app)
 
-> 
+> [Yeoman](http://yeoman.io) generator
 
 # Prerequisites
 
