@@ -1,0 +1,33 @@
+{
+  "name": "generator-tnsw-external-map-app",
+  "version": "0.0.1",
+  "description": "tnsw map app generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "vajnorcan/generator-tnsw-external-map-app",
+  "author": {
+    "name": "Michal Gasparovic",
+    "email": "michal.gasparovic@transport.nsw.gov.au",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }, 
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+	"tfnsw",
+	"tnsw-external-map-app"
+  ],
+  "dependencies": {
+    "chalk": "~0.4.0",
+    "grunt": "~0.4.5",
+    "yeoman-generator": "~0.16.0",
+    "yosay": "^0.1.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}

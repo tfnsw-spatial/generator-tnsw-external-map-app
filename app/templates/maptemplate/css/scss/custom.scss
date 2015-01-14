@@ -1,0 +1,182 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+//$gisapi-resource-url: '//ngistst01/mapservices/proxy/gisapi/';
+
+$font-stack: 'Open Sans', Helvetica, sans-serif;
+$primary-text-color: #333;
+
+$primary-bg-fallback-color: rgb(0,30,90);
+$primary-bg-color: rgba(0,30,90, 0.8);
+$primary-btn-fallback-color: rgb(30,120,210);
+$primary-btn-color: rgba(30,120,210, 0.8);
+$primary-btn-pressed-color: rgb(0,30,90);
+$btn-text-color: white;
+
+
+$title-height: 60px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($property) {
+  -webkit-transition: $property 0.2s ease-in-out;
+     -moz-transition: $property 0.2s ease-in-out;
+      -ms-transition: $property 0.2s ease-in-out;
+          transition: $property 0.2s ease-in-out;
+}
+
+@mixin box-sizing($property){
+	-moz-box-sizing: $property;
+	     box-sizing: $property;
+}
+
+*{
+	/*box-sizing:border-box;
+	-moz-box-sizing:border-box;*/
+	padding: 0;
+	margin: 0;	
+	outline: 0;	
+}
+
+*:focus{
+	@include transition(border);    
+}
+
+
+.map{
+	*box-shadow: 0 2px 4px -1px black;
+	-moz-box-shadow: 0 2px 4px -1px black;
+	-webkit-box-shadow: 0 2px 4px -1px black;
+	-ms-box-shadow: 0 2px 4px -1px black;
+	-o-box-shadow: 0 2px 4px -1px black;
+	left: 0px;
+}			
+
+html, body{
+	overflow: auto;
+	height: auto;
+	width: auto;
+	position: relative;
+}
+
+.map .logo-med{
+	display: none;
+}
+
+label:empty {
+	display: none;
+}
+
+
+
+// Search Results List
+
+.searchInputResults{
+	white-space:nowrap;
+	@include box-sizing(border-box);
+	display:block;
+	max-height:150px;
+	overflow:auto;
+	position:relative;
+	width:100%;
+	@include transition(height);
+	background-color:white;
+	background-color:rgba(255,255,255,0.6);
+	border-radius:0 0 3px 3px;
+	top:-3px;padding:0 5px 0 5px
+}
+.searchInputResults div{
+	margin:1px;
+	cursor:pointer;
+	overflow:hidden
+}
+.searchInputResults div:hover,
+.searchInputResults .itemHovered{
+	background-color:#b4d2e6;
+	box-shadow:0 2px 3px -2px;
+	background-image:-webkit-linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5))
+}
+.searchInputResults .itemSelected{
+	background-color:#b4d2e6;
+	box-shadow:0 2px 3px -2px;
+	background-image:-webkit-linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0))
+}
+.searchInputResults div:active{
+	background-color:#b4d2e6;
+	box-shadow:0 0 3px -2px!important;
+}
+.searchInputResults .supportValue{
+	color:gray
+}
+.searchResultHighlightMatch{
+	background-color:#dcdcff
+}
+.searchInputResults div:hover .searchResultHighlightMatch,
+.searchInputResults div:active .searchResultHighlightMatch,
+.searchInputResults div:focus.searchResultHighlightMatch{
+	background-color:transparent
+}
+
+
+// Hovertip
+
+.hoverTip{
+	color: white;			
+	background-color: rgba(120, 170, 205, 0.9);
+	background-color: rgb(120, 170, 205);
+	box-shadow: none;
+}
+
+
+
+// Spinner
+
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+
+.spinner > div {
+  width: 10px;
+  height: 10px;
+  background-color: #005CAB;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bouncedelay {
+  0%, 80%, 100% { 
+	transform: scale(0.0);
+	-webkit-transform: scale(0.0);
+  } 40% { 
+	transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+  }
+}
