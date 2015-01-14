@@ -1,24 +1,26 @@
 # generator-tnsw-external-map-app [![Build Status](https://secure.travis-ci.org/vajnorcan/generator-tnsw-external-map-app.png?branch=master)](https://travis-ci.org/vajnorcan/generator-tnsw-external-map-app)
 
-> [Yeoman](http://yeoman.io) generator
+> 
 
 # Prerequisites
 
 You must install the following
-1. [NodeJS] (http://nodejs.org/) server
-2. [Ruby] (http://rubyonrails.org) framework for compass/sass support
-3. [Compass] (http://compass-style.org/install/) CSS framework. If installing Compass via the following command fails...
-```bash
-$ gem install compass
-```
-then use other option of 
-```bash
-$ gem install compass --source http://rubygems.org
-```
-or update your security certificates as described here -> http://stackoverflow.com/questions/19150017/ssl-error-when-installing-rubygems-unable-to-pull-data-from-https-rubygems-o
-
-4. [Yeoman]
-5. [Bower] (http://bower.io/#install-bower)
+<ul>
+	<li>[NodeJS] (http://nodejs.org/) server </li>
+	<li>[Ruby] (http://rubyonrails.org) framework for compass/sass support </li>
+	<li>[Compass] (http://compass-style.org/install/) CSS framework. If installing Compass via the following command fails... 
+		```bash
+		$ gem install compass
+		```
+		then use other option of 
+		```bash
+		$ gem install compass --source http://rubygems.org
+		```
+		or update your security certificates as described here -> http://stackoverflow.com/questions/19150017/ssl-error-when-installing-rubygems-unable-to-pull-data-from-https-rubygems-o
+	</li>
+	<li>[Yeoman](http://yeoman.io) generator </li>
+	<li>[Bower] (http://bower.io/#install-bower) </li>
+</ul>
 
 ## Getting Started
 
