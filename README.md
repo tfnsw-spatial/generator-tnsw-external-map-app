@@ -2,6 +2,24 @@
 
 > [Yeoman](http://yeoman.io) generator
 
+# Prerequisites
+
+You must install the following
+> [NodeJS] (http://nodejs.org/) server
+> [Ruby] (http://rubyonrails.org) framework for compass/sass support
+> [Compass] (http://compass-style.org/install/) CSS framework. If installing the following command fails...
+```bash
+$ gem install compass
+```
+then use other option of 
+```bash
+$ gem install compass --source http://rubygems.org
+```
+or update your security certificates as described here -> http://stackoverflow.com/questions/19150017/ssl-error-when-installing-rubygems-unable-to-pull-data-from-https-rubygems-o
+
+> [Yeoman]
+> [Bower]
+> [Grunt]
 
 ## Getting Started
 
