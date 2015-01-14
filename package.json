@@ -5,6 +5,7 @@
   "license": "MIT",
   "main": "app/index.js",
   "repository": "vajnorcan/generator-tnsw-external-map-app",
+  "private": true,
   "author": {
     "name": "Michal Gasparovic",
     "email": "michal.gasparovic@transport.nsw.gov.au",
