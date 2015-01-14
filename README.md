@@ -4,26 +4,7 @@
 
 # Prerequisites
 
-You must install the following
-<ul>
-	<li>[NodeJS](http://nodejs.org/) server </li>
-	<li>[Ruby](http://rubyonrails.org) framework for compass/sass support </li>
-	<li>[Compass](http://compass-style.org/install/) CSS framework. If installing Compass via the following command fails... 
-		```bash
-		$ gem install compass
-		```
-		then use other option of 
-		```bash
-		$ gem install compass --source http://rubygems.org
-		```
-		or update your security certificates as described here -> http://stackoverflow.com/questions/19150017/ssl-error-when-installing-rubygems-unable-to-pull-data-from-https-rubygems-o
-	</li>
-	<li>[Yeoman](http://yeoman.io) generator </li>
-	<li>[Bower](http://bower.io/#install-bower) </li>
-</ul>
-
-
-
+You must install the following:
 * [NodeJS](http://nodejs.org/) server
 * [Ruby](http://rubyonrails.org) framework for compass/sass support
 * [Compass](http://compass-style.org/install/) CSS framework. If installing Compass via the following command fails... 
@@ -34,7 +15,7 @@ then use other option of
 ```bash
 $ gem install compass --source http://rubygems.org
 ```
-or update your security certificates as described here -> http://stackoverflow.com/questions/19150017/ssl-error-when-installing-rubygems-unable-to-pull-data-from-https-rubygems-o
+or update your security certificates as described [- here -](http://stackoverflow.com/questions/19150017/ssl-error-when-installing-rubygems-unable-to-pull-data-from-https-rubygems-o)
 
 * [Yeoman](http://yeoman.io) generator
 * [Bower](http://bower.io/#install-bower)
