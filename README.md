@@ -5,9 +5,9 @@
 # Prerequisites
 
 You must install the following
-> [NodeJS] (http://nodejs.org/) server
-> [Ruby] (http://rubyonrails.org) framework for compass/sass support
-> [Compass] (http://compass-style.org/install/) CSS framework. If installing the following command fails...
+1. [NodeJS] (http://nodejs.org/) server
+2. [Ruby] (http://rubyonrails.org) framework for compass/sass support
+3. [Compass] (http://compass-style.org/install/) CSS framework. If installing Compass via the following command fails...
 ```bash
 $ gem install compass
 ```
@@ -17,9 +17,8 @@ $ gem install compass --source http://rubygems.org
 ```
 or update your security certificates as described here -> http://stackoverflow.com/questions/19150017/ssl-error-when-installing-rubygems-unable-to-pull-data-from-https-rubygems-o
 
-> [Yeoman]
-> [Bower]
-> [Grunt]
+4. [Yeoman]
+5. [Bower] (http://bower.io/#install-bower)
 
 ## Getting Started
 
