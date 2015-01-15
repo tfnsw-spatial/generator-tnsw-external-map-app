@@ -5,3 +5,4 @@ temp/
 .idea/
 npm-debug.log
 .svn/
+.svn*
