@@ -4,3 +4,4 @@ app/templates/node_modules/
 temp/
 .idea/
 npm-debug.log
+.svn/

@@ -17,12 +17,35 @@ pmConfig.Layers = {
 		"baseMapLayers": [
 		{
 			"opacity": 1,
-			"visibility": true,				
-			"url": "//services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
-			//"url": "https://appln.transport.nsw.gov.au/mapservices/proxy/Common/Cache_Map/MapServer",
+			"visibility": false,				
+			"url": "//services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer",				
 			"title": "ESRI Base Map",
 			"id": "ESRIBaseMap",
-			"switchLabel": "Gray",				
+			"switchLabel": "Gray",
+			"relatedBasemapId" : "ESRILabelMap" // The id of layer that will be turned on/off with this layer
+		},
+		{
+			"opacity": 1,
+			"visibility": false,				
+			"url": "//services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",				
+			"title": "ESRI World Imagery",
+			"switchLabel": "Image",
+			"id": "ESRIRasterMap"				
+		},
+		{
+			"opacity": 1,
+			"visibility": true,				
+			"url": "//services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",				
+			"title": "ESRI Topo Map",
+			"switchLabel": "Topo",
+			"id": "ESRITopoMap"				
+		},
+		{
+			"opacity": 1,
+			"visibility": false,				
+			"url": "//services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer",				
+			"title": "ESRI Label Map",
+			"id": "ESRILabelMap"
 		}],
 		"title": "TNSW Cache Map"
 	},
