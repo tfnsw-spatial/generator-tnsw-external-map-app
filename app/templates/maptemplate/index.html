@@ -33,29 +33,41 @@
 		<div style="text-align: center;line-height: 30px;font-size: 30px;line-height: 60px;">
 			<%= appTitle %>
 		</div>
-		<div style="width: 700px; height:800px; position: relative; margin: 3px auto; overflow: hidden;" class="map">
-			<div id="maptools" class="toolbar unselectable" style="">
-				<div id="switchButtons" class="switchButtons">
-					<span aria-hidden="true" class="iconfont hidden" data-icon="&#xe003;"></span>				
-				</div>			
-				<div class="zoomButtons">
-					<div class="zoomButton" tabindex="1" title="Zoom in" role="button" alt="Zoom in map" onkeypress="javascript:_keyPressHandler(event);" onclick="javascript:zoomIn()">+</div>
-					<div class="zoomButton" tabindex="1" title="Zoom out" role="button" alt="Zoom out map" onkeypress="javascript:_keyPressHandler(event);" onclick="javascript:zoomOut();">-</div>				
-				</div>			
-				<div id="scaleLabelNode" class="unselectable scaleLabel">5000</div>						
-			</div>
-			
-			<div style="position:absolute; right: 3px; top: 3px; z-index: 501; width: 300px;">
-				<div id="googleAddressSearcher" data-dojo-type="tnsw/AddressSearch" data-dojo-props="placeholder: 'Enter address and press ENTER', label: '', tnswMap: tnswSpatial.tnswMap"></div>
-			</div>
-			
-			<!--<div data-dojo-type="local/Map" id="map" class="map"></div>-->
-			<div data-dojo-type="tnsw/Map" id="map" class="map"></div>
-			<div id="spinner" class="spinner">				
-				<div class="bounce1"></div>
-				<div class="bounce2"></div>
-				<div class="bounce3"></div>
-			</div>
-		</div>		
+		<div>
+			<section id="sidebar" style="max-width: 300px;box-sizing: border-box;position: absolute;padding: 10px;color: rgba(100,100,100, .7);font-size: 16px; text-shadow: 1px 1px 0px white;">
+				<h3>This demo:</h3>
+				<ul style="list-style-type: square;margin-left: 15px;">
+					<li>generates the map using GISAPI</li>
+					<li>sample how to control the map (zooming) and background layers</li>
+					<li>example of instantiating one of GISAPI widgets (GoogleAddressSearch)</li>
+					<li>loads the graphics data from the json file stored in /data folder</li>
+					<li>interaction with the graphics (hover, click)</li>
+				</ul>
+			</section>
+			<div style="width: 700px; height:800px; position: relative; margin: 3px auto; overflow: hidden;top: -1px;" class="map">
+				<div id="maptools" class="toolbar unselectable" style="">
+					<div id="switchButtons" class="switchButtons">
+						<span aria-hidden="true" class="iconfont hidden" data-icon="&#xe003;"></span>				
+					</div>			
+					<div class="zoomButtons">
+						<div class="zoomButton" tabindex="1" title="Zoom in" role="button" alt="Zoom in map" onkeypress="javascript:_keyPressHandler(event);" onclick="javascript:zoomIn()">+</div>
+						<div class="zoomButton" tabindex="1" title="Zoom out" role="button" alt="Zoom out map" onkeypress="javascript:_keyPressHandler(event);" onclick="javascript:zoomOut();">-</div>				
+					</div>			
+					<div id="scaleLabelNode" class="unselectable scaleLabel">5000</div>						
+				</div>
+
+				<div style="position:absolute; right: 3px; top: 3px; z-index: 501; width: 300px;">
+					<div id="googleAddressSearcher" data-dojo-type="tnsw/AddressSearch" data-dojo-props="placeholder: 'Enter address and press ENTER', label: '', tnswMap: tnswSpatial.tnswMap"></div>
+				</div>
+
+				<!--<div data-dojo-type="local/Map" id="map" class="map"></div>-->
+				<div data-dojo-type="tnsw/Map" id="map" class="map"></div>
+				<div id="spinner" class="spinner">				
+					<div class="bounce1"></div>
+					<div class="bounce2"></div>
+					<div class="bounce3"></div>
+				</div>
+			</div>		
+		</div>
 	</body>	
 </html>

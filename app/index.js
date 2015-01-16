@@ -59,7 +59,7 @@ module.exports = yeoman.generators.Base.extend({
 			this.copy('_gitignore', '.gitignore');
 			this.copy('Gruntfile.js', 'Gruntfile.js');
 			
-			this.copy('jshintrc', 'jshintrc');
+			this.copy('.jshintrc', '.jshintrc');
 			this.copy('editorconfig', 'editorconfig');
 
 			this.template("maptemplate/config/app-config.js", "app/config/app-config.js");
@@ -71,6 +71,7 @@ module.exports = yeoman.generators.Base.extend({
 			this.copy('maptemplate/css/global.css', 'app/css/global.css');
 			this.copy('maptemplate/css/scss/custom.scss', 'app/css/scss/custom.scss');
 			this.copy('maptemplate/graphics/ui/ajax-loader.gif', 'app/graphics/ui/ajax-loader.gif');
+			//this.copy('maptemplate/graphics/map.jpg', 'app/graphics/map.jpg');
 			this.copy('maptemplate/js/local.js', 'app/js/local.js');
 			this.copy('maptemplate/config/dojo-config.js', 'app/config/dojo-config.js');					
 			this.copy('maptemplate/data/sampledata.json', 'app/data/sampledata.json');

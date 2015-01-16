@@ -48,6 +48,8 @@ sampleConfig.customLayers = {
 	]
 };
 
+sampleConfig.atttibuteTemplate = "<table style='width: 100%;'><tr><td>Zone</td><td>{Zone}</td></tr><tr><td>Zone Number</td><td>{Zone_number}</td></tr></table>";
+
 sampleConfig.labelsConfig = [
 	/*{ geometry: {"x":9688338.775634157,"y":4422213.991530776,"spatialReference":{"wkid":3308}}, symbol: sampleConfig.tsymbol, text: "South Precinct" },
 	{ geometry: {"x":9688754.172298279,"y":4423247.191513844,"spatialReference":{"wkid":3308}}, symbol: sampleConfig.tsymbol, text: "Retail Precinct"},
@@ -154,7 +156,10 @@ require(["dojo/on", "dojo/parser", "dojo/ready", "dojo/sniff", "dojo/dom-class",
 						e.graphic.setSymbol(new SimpleFillSymbol(sampleConfig.jsymbolh));
 						tnswSpatial.tnswMap.map.setCursor("pointer");
 						highligtedGraphic = e.graphic;
-					}						
+					}
+					if (attributeInspector){
+						attributeInspector.innerHTML = lang.replace(sampleConfig.atttibuteTemplate, e.graphic.attributes);
+					}
 				});
 				
 				on(fl, "mouse-out", function(e){
@@ -162,12 +167,15 @@ require(["dojo/on", "dojo/parser", "dojo/ready", "dojo/sniff", "dojo/dom-class",
 					if (highligtedGraphic){
 						e.graphic.setSymbol(new SimpleFillSymbol(sampleConfig.jsymbol));
 					}
+					if (attributeInspector){
+						attributeInspector.innerHTML = "";
+					}
 				});									
 				
 				on(fl, "click", function(e){
 					if (e.graphic){
 						alert("zone info : " + e.graphic.attributes.Zone);
-					}
+					}											
 				});
 			}
 		}

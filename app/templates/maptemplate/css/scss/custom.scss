@@ -43,7 +43,7 @@ $title-height: 60px;
 }
 
 *:focus{
-	@include transition(border);    
+	@include transition(border-color);    
 }
 
 
@@ -85,40 +85,60 @@ label:empty {
 	width:100%;
 	@include transition(height);
 	background-color:white;
-	background-color:rgba(255,255,255,0.6);
+	background-color:rgba(255,255,255,1);
 	border-radius:0 0 3px 3px;
-	top:-3px;padding:0 5px 0 5px
+	top:-3px;
+	padding:0 5px 0 5px;
+	border-color: rgba(30,120,210,0.3);
+	border-style: solid;
+	border-width: 2px;
+	border-top-width: 0px;
+	border-top-color: transparent;
 }
+
+.searchInputResults:empty,
+.searchInputResults.closed{
+	border: 0px solid transparent;
+}
+
+
 .searchInputResults div{
 	margin:1px;
 	cursor:pointer;
-	overflow:hidden
+	overflow:hidden;
+	padding: 2px 5px;
 }
+
 .searchInputResults div:hover,
 .searchInputResults .itemHovered{
-	background-color:#b4d2e6;
-	box-shadow:0 2px 3px -2px;
-	background-image:-webkit-linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5))
+	background-color:rgba(30,120,210,.2);	
 }
 .searchInputResults .itemSelected{
-	background-color:#b4d2e6;
-	box-shadow:0 2px 3px -2px;
-	background-image:-webkit-linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0))
-}
-.searchInputResults div:active{
-	background-color:#b4d2e6;
-	box-shadow:0 0 3px -2px!important;
+	background-color: $primary-btn-color !important;
+	color: white;	
 }
 .searchInputResults .supportValue{
-	color:gray
+	color:gray;
 }
 .searchResultHighlightMatch{
-	background-color:#dcdcff
+	background-color:#dcdcff;
 }
 .searchInputResults div:hover .searchResultHighlightMatch,
 .searchInputResults div:active .searchResultHighlightMatch,
 .searchInputResults div:focus.searchResultHighlightMatch{
-	background-color:transparent
+	background-color:transparent;
+}
+
+
+// Attribute Inspector
+#attributeInspector{
+	position:absolute;
+	width: 100%;
+	height: auto;
+	bottom: 0px;
+	background-color: $primary-btn-color;
+	color: white;
+	text-align: center;
 }
 
 
@@ -129,6 +149,13 @@ label:empty {
 	background-color: rgba(120, 170, 205, 0.9);
 	background-color: rgb(120, 170, 205);
 	box-shadow: none;
+}
+
+
+// Google address searcher inputbox and result div overrides
+#googleAddressSearcherInput{
+	border: 2px solid rgba(30,120,210,0.8);
+	border-width: 2px !important;
 }
 
 
@@ -143,8 +170,8 @@ label:empty {
 
 
 .spinner > div {
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   background-color: #005CAB;
 
   border-radius: 100%;

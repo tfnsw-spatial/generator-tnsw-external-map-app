@@ -311,7 +311,10 @@ button{
 	margin: 3px;
 }
 
-button:hover, button:focus, buttom:active, img:focus{
+button:hover, 
+button:focus, 
+buttom:active, 
+img:focus{
 	border: 2px solid rgb(20, 70, 100);	
 }
 
@@ -319,8 +322,12 @@ button:active{
 	box-shadow: none;
 }
 
-input:focus, textarea:focus , select:focus{
-	border: 1px solid rgb(20, 70, 100);	
+input:focus, 
+textarea:focus, 
+select:focus{
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(20, 70, 100) !important;	
 }
 
 
